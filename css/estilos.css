@@ -1,0 +1,98 @@
+body{
+    border:0px;
+    margin: 0px;
+    padding:0px;
+    
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-image{
+    text-align: center;
+    width: 0%;
+    position: absolute;
+    top: 0%;
+}
+.card-image img{
+    width: 21.6em;
+}
+.card-title{
+    font-family: 'Griffy', cursive;
+    color:black;
+}
+.card-description{
+    font-family: 'Grenze Gotisch', cursive;
+    color:black;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    padding-left: 10em;
+}
+.card-footer img{
+    width: 12em;
+}
+
+.card-container{
+    background-color:white;
+    width: 50%;
+}
+
+.card-image img, .card-footer img{
+    width: 1em;
+}
+
+
+.card-body{
+    display: flex;
+    flex-direction:column-reverse;
+    padding-bottom: 2em;
+    padding-top:8em;
+    position: relative;
+}
+.card-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-description{
+    text-align: center;
+    width: 80%;
+}
+@media screen and (min-width:700px) and (orientation:landscape)
+{
+.card-image{
+    position: static;
+    width: 50%;
+}
+.card-image img{
+    transform: scale(16.4,18.9) translateX(15%) translateY(43.3%);
+
+}
+.card-body{
+        display: flex;
+        flex-direction:row;
+        padding-top: 1em;
+    }
+    .card-image{
+        position: static;
+        width: 50%;
+    }
+    .card-container{
+        width: 40rem;
+        transition: all 1s;
+    }
+    .card-content{
+        width: 50%;
+        position: relative;
+    }
+}
+
